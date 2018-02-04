@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Favorite Movie Game</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  justify-content: center;
+}
+
+.flex-container> div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding:30px;
+  
+  text-align: center;
+  font-size: 18px;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+
+</style>
+</head>
+<body>
+<center>
+<br><br>
+
+<h2>Favorite Movie Game</h2><br><br><br><br>
+
+<div class="flex-container">
+  <div><h5>Welcome Player One, <%= p1_first_name %>!</h5><br>
+  You are <%= p1_age%> years old.<br>
+  Your favorite movie is <%= p1_favorite_movie%>.</div>
+
+  <div><h5>Welcome Player Two, <%= p2_first_name %>!</h5><br>
+  You are <%= p2_age%> years old.<br>
+  Your favorite movie is <%= p2_favorite_movie%>.</div>
+  <br><br>
+</div>
+</center>
+</body>
+<br><br><br><br><br>
+</html>
+
+
+
+
+
